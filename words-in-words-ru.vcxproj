@@ -136,10 +136,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Solver.cpp" />
     <ClCompile Include="src\TxtReader.cpp" />
     <ClCompile Include="src\Utf16.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Solver.h" />
     <ClInclude Include="include\TxtReader.h" />
     <ClInclude Include="include\Utf16.h" />
   </ItemGroup>

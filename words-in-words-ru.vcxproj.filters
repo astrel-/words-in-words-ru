@@ -24,12 +24,18 @@
     <ClCompile Include="src\Utf16.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Solver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\TxtReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Utf16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Solver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
