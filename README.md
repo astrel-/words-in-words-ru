@@ -1,4 +1,4 @@
-\# words-in-words-ru
+# words-in-words-ru
 
 
 
@@ -14,51 +14,35 @@ Given a set of letters via standard input, the program finds all valid Russian n
 
 
 
-\## Features
+## Features
 
 
 
-\- Russian noun dictionary support
+- Russian noun dictionary support
 
-\- UTF-16-aware text handling
+- UTF-16-aware text handling
 
-\- Length-based scoring
-
----
-
-
-
-\## How It Works
-
-
-
-1\. Loads the dictionary from `data/russian-nouns.txt`
-
-2\. Reads input word from `stdin`
-
-3\. Checks whether each dictionary word can be formed from the provided letters
-
-4\. Computes score based on word length
-
-5\. Sorts results by score (ascending)
-
-6\. Outputs matching words
-
-
+- Length-based scoring
 
 ---
 
 
 
-\## Build (Windows / MSVC)
+## How It Works
 
 
 
-1\. Open `words-in-words-ru.sln` in Visual Studio  
+1. Loads the dictionary from `data/russian-nouns.txt`
 
-2\. Select `Release x64`  
+2. Reads input word from `stdin`
 
-3\. Build and run  
+3. Checks whether each dictionary word can be formed from the provided letters
+
+4. Computes score based on word length
+
+5. Sorts results by score (ascending)
+
+6. Outputs matching words
 
 
 
@@ -66,7 +50,23 @@ Given a set of letters via standard input, the program finds all valid Russian n
 
 
 
-\## Usage
+## Build (Windows / MSVC)
+
+
+
+1. Open `words-in-words-ru.sln` in Visual Studio  
+
+2. Select `Release x64`  
+
+3. Build and run  
+
+
+
+---
+
+
+
+## Usage
 
 
 
@@ -108,13 +108,13 @@ Example output:
 
 
 
-\## Limitations
+## Limitations
 
 
 
-\- Does not currently normalize `е` / `ё`
+- Does not currently normalize `е` / `ё`
 
-\- Windows/MSVC build only
+- Windows/MSVC build only
 
 
 
@@ -122,17 +122,17 @@ Example output:
 
 
 
-\## TODO
+## TODO
 
 
 
-\- \[ ] Implement `е` / `ё` normalization
+- [ ] Implement `е` / `ё` normalization
 
-\- \[ ] Add command-line arguments
+- [ ] Add command-line arguments
 
-\- \[ ] Add unit tests
+- [ ] Add unit tests
 
-\- \[ ] Introduce CMake build for cross-platform support
+- [ ] Introduce CMake build for cross-platform support
 
 
 
