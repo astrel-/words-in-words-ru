@@ -1,6 +1,4 @@
 ﻿#include <iostream>
-#include <print>
-#include <ranges>
 #include <string>
 #include <unordered_map>
 
@@ -13,13 +11,16 @@ static const std::string FILE_NAME = "data/russian-nouns.txt";
 
 static std::unordered_map<wchar_t, int> to_hashtable(const std::wstring& input) {
 	std::unordered_map<wchar_t, int> result;
+	result.reserve(input.size());
 	for (wchar_t ch : input) {
 		result[ch]++;
 	}
 	return result;
 }
 
-static bool is_sub_hashtable(std::unordered_map<wchar_t, int> small, std::unordered_map<wchar_t, int> big) {
+static bool is_sub_hashtable(
+	const std::unordered_map<wchar_t, int>& small, 
+	const std::unordered_map<wchar_t, int>& big) {
 	for (const auto& kv : small) {
 		auto c = kv.first;
 		int countSmall = kv.second;
@@ -44,6 +45,7 @@ int main() {
 	auto words = TxtReader::read_file(FILE_NAME);
 
 	for (const auto& word : words) {
+		// Dictionary is sorted by increasing length, so we can stop early
 		if (word.size() > input.size())
 			break;
 

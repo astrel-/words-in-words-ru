@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 namespace Utf16 {
 	std::wstring read_line_utf16();

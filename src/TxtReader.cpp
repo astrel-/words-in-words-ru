@@ -1,9 +1,7 @@
 #include "TxtReader.h"
-#include "Utf16.h"
 #include <windows.h>
 
 #include <fstream>
-#include <iostream>
 #include <string>
 #include <vector>
 
@@ -30,6 +28,9 @@ namespace TxtReader {
 		std::vector<std::wstring> words;
 		std::string line;
 		std::wstring wline;
+
+		if (!file) 
+			throw std::runtime_error("Failed to open: " + filename);
 
 		while (std::getline(file, line)) {
 			// strip UTF-8 BOM if present on first line
