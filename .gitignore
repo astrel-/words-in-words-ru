@@ -1,0 +1,28 @@
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+ipch/
+*.user
+*.suo
+*.sln.docstates
+
+# Build output
+x64/
+x86/
+Debug/
+Release/
+build/
+out/
+bin/
+obj/
+
+# Artifacts
+*.obj
+*.pdb
+*.ilk
+*.tlog
+*.log
+*.exe
+*.dll
+*.lib
