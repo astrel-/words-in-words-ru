@@ -1,0 +1,12 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# Explicitly keep C++ files as text
+*.cpp text
+*.h   text
+*.txt text
+
+# Visual Studio files
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.filters text eol=crlf
