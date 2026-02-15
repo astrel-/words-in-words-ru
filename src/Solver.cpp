@@ -1,12 +1,16 @@
 #pragma once
 #include "Solver.h"
 
+static const wchar_t ye = L'\u0435'; // e
+static const wchar_t yo = L'\u0451'; // ё
+
 namespace Solver {
 
 	std::unordered_map<wchar_t, int> to_hashtable(const std::wstring& input) {
 		std::unordered_map<wchar_t, int> result;
 		result.reserve(input.size());
 		for (wchar_t ch : input) {
+			ch = ch == yo ? ye : ch;
 			result[ch]++;
 		}
 		return result;

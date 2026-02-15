@@ -126,8 +126,6 @@ Example output:
 
 
 
-- [ ] Implement `е` / `ё` normalization
-
 - [ ] Add command-line arguments
 
 - [ ] Introduce CMake build for cross-platform support
