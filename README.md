@@ -48,10 +48,32 @@ Given a set of letters via standard input, the program finds all valid Russian n
 
 ---
 
+## Build
 
+The project supports both CMake and native Visual Studio builds.
 
-## Build (Windows / MSVC)
+### Option 1 — CMake (Recommended)
 
+```bash
+cmake -S . -B build
+cmake --build build --config Release
+```
+
+Run the application:
+
+```bash
+build\Release\words-in-words-ru.exe
+```
+
+Run unit tests:
+
+```bash
+ctest --test-dir build -C Release
+```
+
+---
+
+### Option 2 — Visual Studio
 
 
 1. Open `words-in-words-ru.sln` in Visual Studio  
@@ -59,7 +81,6 @@ Given a set of letters via standard input, the program finds all valid Russian n
 2. Select `Release x64`  
 
 3. Build and run  
-
 
 
 ---
@@ -102,30 +123,6 @@ Example output:
 
 ```
 
-
-
----
-
-
-
-## Limitations
-
-
-
-- Does not currently normalize `е` / `ё`
-
-- Windows/MSVC build only
-
-
-
----
-
-
-
-## TODO
-
-
-- [ ] Add command-line arguments
 
 
 
