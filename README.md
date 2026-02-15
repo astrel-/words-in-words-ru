@@ -130,8 +130,6 @@ Example output:
 
 - [ ] Add command-line arguments
 
-- [ ] Add unit tests
-
 - [ ] Introduce CMake build for cross-platform support
 
 
