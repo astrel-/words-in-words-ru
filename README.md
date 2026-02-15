@@ -125,11 +125,7 @@ Example output:
 ## TODO
 
 
-
 - [ ] Add command-line arguments
-
-- [ ] Introduce CMake build for cross-platform support
-
 
 
 
